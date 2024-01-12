@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-def call() {
+def call(String imageName) {
     echo "building the image"
-    sh 'docker build -t zahranjamali/myrepo:java-maven-app-rev-1.1 .'
+    sh "docker build -t $imageName ."
 }
